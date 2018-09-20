@@ -1,0 +1,130 @@
+SWD project
+	Public area
+		Home page
+			Welcome note
+			Images
+			Opening times
+			other content
+		Services page
+			display sports facilities
+				such as tennis, Bowls Soccor
+		Membership page
+			List the clubs membership types (editable)
+				Single type
+					benifits and fees
+				family type
+					benifits and fees
+		Events page
+			List upcoming events
+				Each event has register button
+					title, description an image, date and time 
+						register button allows members and non members to register
+							upon registering a member provides membership number and no of attendees
+							non members asked to provide name,email,phone
+						event capacity must be checked 
+		News page
+			display news about club activities with post time and date (editable)
+		Contact-us page
+			display contact details
+				phone,address,opening times (editable)
+			display get in touch form
+				form includes
+					name,email,phone,subject,message
+					club manager receives notification after form sent
+	Private area
+		login page
+			club manager dashboard page
+				(functionality)
+					add new membership types, update and delete
+						form(add type)
+							add type to membership-type table
+						form(update type)
+							update type to membership-type table
+						form(delete type)
+							delete type from membership-type table
+					add or update events
+						form(add event)
+							add event to event table
+						form(update event)
+							update event to event table
+					post a news item
+						form(add new item)
+							add news item to news-item table
+					check emails from visitors who sent contact form
+					see reports
+						membership fees received last month, a year
+						statistics related to  enquires from the site
+						#new memberships
+						#expired memberships
+					manage clubs staff CRUD
+						form(add new staff)
+							add new staff member to employees table
+						form(update staff)
+							update staff member in employees table
+						form(delete staff)
+							delete staff member from employees table
+					manage memberships CRUD
+						form(update)
+							select member using member number
+						form(add new user)
+							add new user to membership table
+						form(delete membership)
+							add new member to membership table
+			staff member page
+				(functionality)
+					register new or update existing club memberships
+						form(add new user)
+							add new user to membership table
+					add/update info related to membership payments
+						form(update)
+							select member using member number
+	database
+		tables
+			employees table
+				employee id
+				employee password
+				employee role
+				name
+				email
+			membership table
+				member id
+				member number
+				name
+				address
+				membership type
+				fees paid
+			club-contact details table
+				phone 
+				address
+				email
+				opening times
+			membership-type table
+				type
+				type benefits
+				type fees
+				type id
+			event-table
+				event id
+				title
+				description
+				date
+				time
+			event-participants table
+				membership number
+				Name
+				email
+				phone
+				event id
+				member attendees number
+			club-news-item table
+				news item(club activitie)
+				date
+				post time
+				item id
+			contact-form-table
+				contact id
+				name
+				email
+				phone
+				subject
+				message

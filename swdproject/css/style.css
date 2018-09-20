@@ -1,0 +1,284 @@
+body {
+	font: 400 15px Roboto;
+	line-height: 1.8;
+	margin: 0 auto;
+  background-color: #F0FFF0;
+}
+
+/**{ use for testing boxes shows all borders and dimensions
+	border: solid black 1px;
+}*/
+
+
+.page-body {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.row .glyphicon{
+    font-size: 50px;
+}
+/* Memberships css */
+.panel {
+    border: 1px solid #586D6E;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #586D6E;
+    background-color: #fff !important;
+    color: #586D6E;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #586D6E !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #FF9000;
+    color: #fff;
+}
+/*end of panel*/
+
+ /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+
+
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+
+
+/*------------------------home page----------------------------------------------*/
+a:link {
+    text-decoration: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*------------------------navbar styles start------------------------------------*/
+.navbar {
+	margin-bottom: 0;
+	background-color: #FF9000; /* older blue color #091427*/
+	z-index: 9999;
+	border: 0;
+	font-size: 15px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+
+.navbar ul {
+	padding-top: 1.5em;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-brand{
+		display: none;
+	}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color:  #00878D !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.navbar-nav  {
+	padding-left: 3em;
+}
+/*------------------------navbar styles end------------------------------------*/
+
+
+/*------------------------footer styles start------------------------------------*/
+footer {
+	background-color: #FF9000;
+	color: white;
+	padding-top: 1.5em;
+}
+
+footer p{
+	color: white;
+}
+
+#footer-note {
+	padding-left: 5em;
+}
+
+.hover-text-purple:hover {
+	color: purple; }
+
+.hover-text-blue:hover {
+	color: #0096C7; }
+
+.hover-text-yellow:hover {
+	color: yellow; }
+
+.hover-text-red:hover {
+	color: red; }
+
+footer i {
+	color: #ffffff;
+	font-size: 2em;
+}
+
+footer ul {
+	margin-left:-20px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+footer ul li a {
+	color:white;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color:#00878D;
+}
+/*------------------------footer styles end------------------------------------*/
+
+
+/*------------------------news page styles start------------------------------------*/
+
+.news-info {
+	padding: 12px;
+	border-radius: 15px;
+	background-color: #efefef;
+	margin-right: 1em;
+}
+/*------------------------news page styles end------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	.navbar-toggle {
+		background-color: white;
+	}
+}
+
+@media screen and (max-width: 413px) {
+	.navbar-brand {
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+}
+
+
+
